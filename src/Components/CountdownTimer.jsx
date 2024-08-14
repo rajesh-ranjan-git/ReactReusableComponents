@@ -53,7 +53,7 @@ const CountdownTimer = () => {
       if (isTimerStarted === true) {
         startTimer(hours, minutes, seconds);
       }
-    }, 100);
+    }, 1000);
 
     setTimerID(tID);
 
