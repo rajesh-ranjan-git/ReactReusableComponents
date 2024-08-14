@@ -10,9 +10,26 @@ const Home = () => {
   const handleThrottling = () => {
     navigate("/throttling");
   };
+  const handleCountdownTimer = () => {
+    navigate("/countdownTimer");
+  };
+
+  const handleModal = () => {
+    navigate("/modal");
+  };
+  const handleCarousel = () => {
+    navigate("/carousel");
+  };
+
+  const handleDropdown = () => {
+    navigate("/dropdown");
+  };
+  const handleAccordion = () => {
+    navigate("/accordion");
+  };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen gap-10">
+    <div className="flex flex-col justify-center items-center p-10 min-h-screen gap-10">
       <button
         className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
         onClick={handleDebouncing}
@@ -24,6 +41,36 @@ const Home = () => {
         onClick={handleThrottling}
       >
         Throttling
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleCountdownTimer}
+      >
+        CountdownTimer
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleModal}
+      >
+        Modal
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleCarousel}
+      >
+        Carousel
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleDropdown}
+      >
+        Dropdown
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleAccordion}
+      >
+        Accordion
       </button>
     </div>
   );

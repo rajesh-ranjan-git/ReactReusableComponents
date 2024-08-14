@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import GoHome from "./GoHome";
 
 const Debouncing = () => {
