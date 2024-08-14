@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import Debouncing from "./Components/Debouncing.jsx";
+import Throttling from "./Components/Throttling.jsx";
 import Error from "./Components/Error.jsx";
 
 const appRouter = createBrowserRouter([
@@ -16,8 +17,12 @@ const appRouter = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/debounce",
+        path: "/debouncing",
         element: <Debouncing />,
+      },
+      {
+        path: "/throttling",
+        element: <Throttling />,
       },
     ],
     errorElement: <Error />,
