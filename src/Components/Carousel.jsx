@@ -1,134 +1,108 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import GoHome from "./GoHome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+const slides = [
+  {
+    src: "https://picsum.photos/seed/img1/1000/600",
+    alt: "Image 1 for carousel",
+  },
+  {
+    src: "https://picsum.photos/seed/img2/1000/600",
+    alt: "Image 2 for carousel",
+  },
+  {
+    src: "https://picsum.photos/seed/img3/1000/600",
+    alt: "Image 3 for carousel",
+  },
+  {
+    src: "https://picsum.photos/seed/img4/1000/600",
+    alt: "Image 4 for carousel",
+  },
+  {
+    src: "https://picsum.photos/seed/img5/1000/600",
+    alt: "Image 5 for carousel",
+  },
+  {
+    src: "https://picsum.photos/seed/img6/1000/600",
+    alt: "Image 6 for carousel",
+  },
+];
 
 const Carousel = () => {
-  const [hide, setHide] = useState(false);
-  const [imgClass, setImgClass] = useState("");
+  const [slide, setSlide] = useState(0);
 
-  const imgRef1 = useRef();
-  const imgRef2 = useRef();
-  const imgRef3 = useRef();
-  const imgRef4 = useRef();
-  const imgRef5 = useRef();
-  const imgRef6 = useRef();
-  const imgRef7 = useRef();
-  const imgRef8 = useRef();
+  const handleRight = () => {
+    setSlide(slide > slides.length - 2 ? 0 : slide + 1);
+  };
 
-  const imgArray = [
-    {
-      id: 1,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image1.jpg"
-          ref={imgRef1}
-          key={1}
-        />
-      ),
-    },
-    {
-      id: 2,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image2.jpg"
-          ref={imgRef2}
-          key={2}
-        />
-      ),
-    },
-    {
-      id: 3,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image3.jpg"
-          ref={imgRef3}
-          key={3}
-        />
-      ),
-    },
-    {
-      id: 4,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image4.jpg"
-          ref={imgRef4}
-          key={4}
-        />
-      ),
-    },
-    {
-      id: 5,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image5.jpg"
-          ref={imgRef5}
-          key={5}
-        />
-      ),
-    },
-    {
-      id: 6,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image6.jpg"
-          ref={imgRef6}
-          key={6}
-        />
-      ),
-    },
-    {
-      id: 7,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image7.jpg"
-          ref={imgRef7}
-          key={7}
-        />
-      ),
-    },
-    {
-      id: 8,
-      element: (
-        <img
-          className="absolute object-cover w-[100%] h-[100%]"
-          src="src\assets\carousel_image8.jpg"
-          ref={imgRef8}
-          key={8}
-        />
-      ),
-    },
-  ];
+  const handleLeft = () => {
+    setSlide(slide < 1 ? slides.length - 1 : slide - 1);
+  };
 
-  imgArray.forEach((img, idx) => (img.key = idx + 1));
+  const handleDots = (idx) => {
+    setSlide(idx);
+  };
 
-  const handleLeft = () => {};
+  useEffect(() => {
+    let timerID = setInterval(() => {
+      setSlide(slide > slides.length - 2 ? 0 : slide + 1);
+    }, 4000);
 
-  const handleRight = () => {};
+    return () => {
+      clearInterval(timerID);
+    };
+  }, [slide]);
 
   return (
     <>
       <div className="flex flex-col items-center h-screen">
         <h1 className="text-5xl p-5">Carousel</h1>
-        <div className="relative w-[80%] h-[60%] bg-slate-900">
-          {imgArray.map((img) => img.element)}
-          <button
-            className="absolute z-10 top-[45%] left-10 p-5 rounded-full bg-red-800 text-white"
+        <div className="relative flex justify-center items-center">
+          {slides.map((img, idx) => {
+            return (
+              <img
+                src={img.src}
+                key={idx}
+                className={
+                  slide === idx
+                    ? "rounded-2xl shadow-2xl"
+                    : "hidden rounded-2xl shadow-2xl"
+                }
+              />
+            );
+          })}
+          <div
+            className="absolute left-2 z-10 w-10 h-10 bg-white rounded-full flex justify-center items-center text-xl shadow-2xl cursor-pointer hover:bg-black hover:text-white"
             onClick={handleLeft}
           >
-            Left
-          </button>
-          <button
-            className="absolute z-10 top-[45%] right-10 p-5 rounded-full bg-red-800 text-white"
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
+          <div
+            className="absolute right-2 z-10 w-10 h-10 bg-white rounded-full flex justify-center items-center text-xl shadow-2xl cursor-pointer hover:bg-black hover:text-white"
             onClick={handleRight}
           >
-            Right
-          </button>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </div>
+          <div className="absolute bottom-2 z-10 flex">
+            {slides.map((_, idx) => {
+              return (
+                <div
+                  className={
+                    slide === idx
+                      ? "m-2 w-4 h-4 bg-white rounded-full flex justify-center items-center text-xl shadow-2xl cursor-pointer"
+                      : "m-2 w-4 h-4 bg-slate-400 rounded-full flex justify-center items-center text-xl shadow-2xl cursor-pointer hover:bg-white"
+                  }
+                  onClick={() => handleDots(idx)}
+                  key={idx}
+                ></div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <GoHome />
