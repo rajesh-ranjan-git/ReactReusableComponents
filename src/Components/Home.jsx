@@ -10,6 +10,7 @@ const Home = () => {
   const handleThrottling = () => {
     navigate("/throttling");
   };
+
   const handleCountdownTimer = () => {
     navigate("/countdownTimer");
   };
@@ -17,6 +18,7 @@ const Home = () => {
   const handleModal = () => {
     navigate("/modal");
   };
+
   const handleCarousel = () => {
     navigate("/carousel");
   };
@@ -24,8 +26,13 @@ const Home = () => {
   const handleDropdown = () => {
     navigate("/dropdown");
   };
+
   const handleAccordion = () => {
     navigate("/accordion");
+  };
+
+  const handleDisplayTime = () => {
+    navigate("/displayTime");
   };
 
   return (
@@ -71,6 +78,12 @@ const Home = () => {
         onClick={handleAccordion}
       >
         Accordion
+      </button>
+      <button
+        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        onClick={handleDisplayTime}
+      >
+        DisplayTime
       </button>
     </div>
   );

@@ -10,6 +10,7 @@ import Modal from "./Components/Modal.jsx";
 import Carousel from "./Components/Carousel.jsx";
 import Dropdown from "./Components/Dropdown.jsx";
 import Accordion from "./Components/Accordion.jsx";
+import DisplayTime from "./Components/DisplayTime.jsx";
 import Error from "./Components/Error.jsx";
 
 const appRouter = createBrowserRouter([
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/accordion",
         element: <Accordion />,
+      },
+      {
+        path: "/displayTime",
+        element: <DisplayTime />,
       },
     ],
     errorElement: <Error />,
