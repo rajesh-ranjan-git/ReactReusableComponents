@@ -2,7 +2,7 @@
 
 > This is practice set for commonly used Frontend components.
 
-> This practice set includes :
+-> This practice set includes :
 
 1. ToDo
 2. Accordion
