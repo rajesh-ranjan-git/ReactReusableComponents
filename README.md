@@ -18,11 +18,11 @@
 
 ---
 
-## Interview Topics
+# Interview Topics
 
 ---
 
-# JavaScript Topics
+## JavaScript Topics
 
 1. Difference between == and ===
 2. Difference between Let, var and const
@@ -69,7 +69,7 @@
 
 ---
 
-# React Topics
+## React Topics
 
 1. What is react
 2. Why we are using react
@@ -118,7 +118,7 @@
 
 ---
 
-# Backend Topics
+## Backend Topics
 
 1. Intro to NodeJS
 2. Setup of NodeJS
