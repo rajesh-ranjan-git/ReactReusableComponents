@@ -45,9 +45,9 @@
 1. Callback
 2. Promises
 3. Async/Await
-   => Javascript Engine
-   => This keyword
-   => Closures
+   1. Javascript Engine
+   2. This keyword
+   3. Closures
 4. Higher Order Functions ( Map, Filter and Reduce )
 5. IIFE
 6. Prototype
@@ -60,10 +60,12 @@
 13. Rest parameter and spread operator
 14. Call Apply Bind
 
-> > Object Destructuring
-> > Local storage and session storage
-> > currying
-> > Arrow functions
+> Additional Topics
+
+1. Object Destructuring
+2. Local storage and session storage
+3. Currying
+4. Arrow functions
 
 ---
 
