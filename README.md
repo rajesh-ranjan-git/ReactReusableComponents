@@ -82,7 +82,7 @@
 11. Understanding Props
 12. Understanding the cards and props methods
 13. React Reconciliation and React Fibers and KEYS
-14. understanding the UseState hook
+14. understanding the useState hook
 15. Understanding the useRef hook
 16. Understanding the useEffect hook
 17. Shimmer UI
