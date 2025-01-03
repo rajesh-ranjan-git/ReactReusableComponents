@@ -4,7 +4,7 @@
 
 ---
 
-> This practice set includes :
+## This practice set includes :
 
 1. ToDo
 2. Accordion
@@ -19,8 +19,6 @@
 ---
 
 # Interview Topics
-
----
 
 ## JavaScript Topics
 
@@ -66,8 +64,6 @@
 2. Local storage and session storage
 3. Currying
 4. Arrow functions
-
----
 
 ## React Topics
 
@@ -115,8 +111,6 @@
 42. Yup ( for validations )
 43. CI/CD pipelines
 44. Deployment of frontend on netlify
-
----
 
 ## Backend Topics
 
