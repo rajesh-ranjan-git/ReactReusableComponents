@@ -35,55 +35,65 @@ const Home = () => {
     navigate("/displayTime");
   };
 
+  const handleColorGenerator = () => {
+    navigate("/randomColorGenerator");
+  };
+
   return (
-    <div className="flex flex-col justify-center items-center p-10 min-h-screen gap-10">
+    <div className="flex flex-wrap justify-center items-center gap-10 p-10 min-h-screen">
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleDebouncing}
       >
         Debouncing
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleThrottling}
       >
         Throttling
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleCountdownTimer}
       >
         CountdownTimer
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleModal}
       >
         Modal
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleCarousel}
       >
         Carousel
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleDropdown}
       >
         Dropdown
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleAccordion}
       >
         Accordion
       </button>
       <button
-        className="p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleDisplayTime}
       >
         DisplayTime
+      </button>
+      <button
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+        onClick={handleColorGenerator}
+      >
+        Random Color Generator
       </button>
     </div>
   );

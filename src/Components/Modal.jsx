@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import GoHome from "./GoHome";
 
 const Modal = () => {
@@ -19,18 +19,18 @@ const Modal = () => {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <h1 className="text-5xl p-5">Modal</h1>
+        <h1 className="p-5 text-5xl">Modal</h1>
         <button
-          className="m-4 p-4 w-48 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+          className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
           onClick={handleModal}
         >
           {!showModal ? "Open Modal" : "Close Modal"}
         </button>
         {showModal && (
-          <div className="absolute top-60 p-10 flex flex-col justify-center items-center w-[70%] h-[50%] bg-lime-600 text-8xl font-semibold text-white rounded-2xl  shadow-xl shadow-slate-950">
+          <div className="top-60 absolute flex flex-col justify-center items-center bg-lime-600 shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-8xl text-white">
             <div>This is Modal</div>
             <button
-              className="absolute bottom-10 p-4 w-96 text-lime-600 text-2xl bg-white font-semibold rounded-full shadow-xl shadow-slate-950"
+              className="bottom-10 absolute bg-white shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-lime-600"
               onClick={handleCloseModal}
             >
               Close Modal

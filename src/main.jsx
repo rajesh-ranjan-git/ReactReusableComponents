@@ -11,6 +11,7 @@ import Carousel from "./Components/Carousel.jsx";
 import Dropdown from "./Components/Dropdown.jsx";
 import Accordion from "./Components/Accordion.jsx";
 import DisplayTime from "./Components/DisplayTime.jsx";
+import RandomColorGenerator from "./Components/RandomColorGenerator.jsx";
 import Error from "./Components/Error.jsx";
 
 const appRouter = createBrowserRouter([
@@ -53,6 +54,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/displayTime",
         element: <DisplayTime />,
+      },
+      {
+        path: "/randomColorGenerator",
+        element: <RandomColorGenerator />,
       },
     ],
     errorElement: <Error />,
