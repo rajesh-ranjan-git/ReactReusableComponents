@@ -15,6 +15,8 @@
 7. DropDown
 8. Modal
 9. Throttling
+10. Random Color Generator
+11. Star Rating
 
 ---
 

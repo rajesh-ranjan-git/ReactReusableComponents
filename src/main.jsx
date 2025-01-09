@@ -13,6 +13,7 @@ import Accordion from "./Components/Accordion.jsx";
 import DisplayTime from "./Components/DisplayTime.jsx";
 import RandomColorGenerator from "./Components/RandomColorGenerator.jsx";
 import Error from "./Components/Error.jsx";
+import StarRating from "./Components/StarRating.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/randomColorGenerator",
         element: <RandomColorGenerator />,
+      },
+      {
+        path: "/starRating",
+        element: <StarRating />,
       },
     ],
     errorElement: <Error />,
