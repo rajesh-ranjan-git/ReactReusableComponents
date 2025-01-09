@@ -9,9 +9,9 @@ const GoHome = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex justify-center items-center">
         <button
-          className="absolute bottom-10 p-4 w-96 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+          className="bottom-10 fixed bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
           onClick={handleErrorToHome}
         >
           Go Home

@@ -14,6 +14,7 @@ import DisplayTime from "./Components/DisplayTime.jsx";
 import RandomColorGenerator from "./Components/RandomColorGenerator.jsx";
 import Error from "./Components/Error.jsx";
 import StarRating from "./Components/StarRating.jsx";
+import InfiniteScrolling from "./Components/InfiniteScrolling.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/starRating",
         element: <StarRating />,
+      },
+      {
+        path: "/infiniteScrolling",
+        element: <InfiniteScrolling />,
       },
     ],
     errorElement: <Error />,

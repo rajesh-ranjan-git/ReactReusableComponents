@@ -64,6 +64,7 @@ const Carousel = () => {
                 return (
                   <img
                     src={img.download_url}
+                    alt={img.download_url}
                     key={img.id}
                     className={
                       slide === idx
