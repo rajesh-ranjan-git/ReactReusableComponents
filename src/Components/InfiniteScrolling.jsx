@@ -6,17 +6,25 @@ const InfiniteScrolling = () => {
   const url = "https://dummyjson.com/products";
 
   const [products, setProducts] = useState([]);
+  const [skip, setSkip] = useState(0);
+  const [total, setTotal] = useState(null);
+  const [limitReached, setLimitReached] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const handleLoadMore = () => {
+    setSkip((prev) => prev + 1);
+  };
 
   const getProducts = async (url, limit, skip) => {
     try {
       const response = await fetch(
-        `${url}?limit=${limit}&skip=${skip}&select=title,thumbnail`
+        `${url}?limit=${limit}&skip=${skip === 0 ? 0 : skip * 20}`
       );
       const data = await response.json();
 
-      if (data) {
-        setProducts(data.products);
+      if (data && data.products && data.products.length) {
+        setProducts((prev) => [...prev, ...data.products]);
+        if (total === null) setTotal(data.total);
         setLoading(false);
       }
     } catch (error) {
@@ -26,8 +34,12 @@ const InfiniteScrolling = () => {
   };
 
   useEffect(() => {
-    if (url !== "") getProducts(url, 20, 0);
-  }, [url]);
+    if (url !== "") getProducts(url, 20, skip);
+  }, [url, skip]);
+
+  useEffect(() => {
+    if (products.length === 0) setLimitReached(true);
+  }, [products]);
 
   return (
     <>
@@ -38,7 +50,7 @@ const InfiniteScrolling = () => {
             ? products.map((item) => (
                 <div
                   className="shadow-lg rounded w-sm overflow-hidden"
-                  key={item.title}
+                  key={item.id}
                 >
                   <img
                     className="w-640"
@@ -53,9 +65,16 @@ const InfiniteScrolling = () => {
             : null}
         </div>
 
-        <button className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white">
-          Load More ...
-        </button>
+        {limitReached ? (
+          <button
+            className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+            onClick={handleLoadMore}
+          >
+            Load More ...
+          </button>
+        ) : (
+          <div>Products Limit Reached</div>
+        )}
 
         {loading && <Loader />}
       </div>
