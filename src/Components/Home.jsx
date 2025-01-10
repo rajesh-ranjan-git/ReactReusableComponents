@@ -55,6 +55,10 @@ const Home = () => {
     navigate("/qrCodeGenerator");
   };
 
+  const handleTodo = () => {
+    navigate("/todo");
+  };
+
   return (
     <div className="flex flex-wrap justify-center items-center gap-10 p-10 min-h-screen">
       <button
@@ -134,6 +138,12 @@ const Home = () => {
         onClick={handleQRCodeGenerator}
       >
         QR Code Generator
+      </button>
+      <button
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+        onClick={handleTodo}
+      >
+        Todo
       </button>
     </div>
   );
