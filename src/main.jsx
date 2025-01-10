@@ -18,6 +18,7 @@ import InfiniteScrolling from "./Components/InfiniteScrolling.jsx";
 import NavigationMenu from "./Components/NavigationMenu/NavigationMenu.jsx";
 import QRCodeGenerator from "./Components/QRCodeGenerator.jsx";
 import Todo from "./components/Todo/todo.jsx";
+import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -83,6 +84,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/todo",
         element: <Todo />,
+      },
+      {
+        path: "/themeChanger",
+        element: <ThemeChanger />,
       },
     ],
     errorElement: <Error />,
