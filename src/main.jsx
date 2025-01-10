@@ -16,6 +16,7 @@ import Error from "./Components/Error.jsx";
 import StarRating from "./Components/StarRating.jsx";
 import InfiniteScrolling from "./Components/InfiniteScrolling.jsx";
 import NavigationMenu from "./Components/NavigationMenu/NavigationMenu.jsx";
+import QRCodeGenerator from "./Components/QRCodeGenerator.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/navigationMenu",
         element: <NavigationMenu />,
+      },
+      {
+        path: "/qrCodeGenerator",
+        element: <QRCodeGenerator />,
       },
     ],
     errorElement: <Error />,
