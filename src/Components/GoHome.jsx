@@ -7,6 +7,7 @@ const GoHome = () => {
   const handleErrorToHome = () => {
     navigate("/");
   };
+
   return (
     <>
       <div className="flex justify-center items-center">

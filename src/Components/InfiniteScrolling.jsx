@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import GoHome from "./GoHome";
 import Loader from "./Loader";
+import { useNavigate } from "react-router-dom";
 
 const InfiniteScrolling = () => {
   const url = "https://dummyjson.com/products";
@@ -33,12 +33,18 @@ const InfiniteScrolling = () => {
     }
   };
 
+  const navigate = useNavigate();
+
+  const handleErrorToHome = () => {
+    navigate("/");
+  };
+
   useEffect(() => {
     if (url !== "") getProducts(url, 20, skip);
   }, [url, skip]);
 
   useEffect(() => {
-    if (products.length === 0) setLimitReached(true);
+    if (products.length === total) setLimitReached(true);
   }, [products]);
 
   return (
@@ -64,21 +70,30 @@ const InfiniteScrolling = () => {
               ))
             : null}
         </div>
+        <button
+          className={
+            !limitReached
+              ? "bg-lime-600 shadow-slate-950 shadow-xl my-5 py-5 p-4 rounded-full w-96 font-semibold text-2xl text-white"
+              : "bg-lime-300 shadow-slate-950 shadow-xl my-5 py-5 p-4 rounded-full w-96 font-semibold text-2xl text-white disabled"
+          }
+          onClick={!limitReached ? handleLoadMore : null}
+        >
+          {!limitReached ? "Load More ..." : "Products Limit Reached"}
+        </button>
 
-        {limitReached ? (
+        {/* {!limitReached ? null : <div>Products Limit Reached</div>} */}
+
+        <div className="flex justify-center items-center py-5">
           <button
             className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
-            onClick={handleLoadMore}
+            onClick={handleErrorToHome}
           >
-            Load More ...
+            Go Home
           </button>
-        ) : (
-          <div>Products Limit Reached</div>
-        )}
+        </div>
 
         {loading && <Loader />}
       </div>
-      <GoHome />
     </>
   );
 };
