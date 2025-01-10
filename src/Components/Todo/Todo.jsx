@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TodoContainer from "./components/TodoContainer";
 import { ToDoContext } from "./store/ToDoContext";
+import { useNavigate } from "react-router-dom";
 
 function Todo() {
   const [items, setItems] = useState([]);
@@ -60,6 +61,12 @@ function Todo() {
     }
   };
 
+  const navigate = useNavigate();
+
+  const handleErrorToHome = () => {
+    navigate("/");
+  };
+
   useEffect(() => {
     getTodoItems();
   }, []);
@@ -84,6 +91,12 @@ function Todo() {
       >
         <TodoContainer />
       </ToDoContext.Provider>
+      <button
+        className="bottom-10 fixed shadow-slate-950 shadow-xl backdrop-blur-2xl p-4 border border-opacity-50 rounded-full w-96 font-semibold text-2xl text-white"
+        onClick={handleErrorToHome}
+      >
+        Go Home
+      </button>
     </div>
   );
 }
