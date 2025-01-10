@@ -15,6 +15,7 @@ import RandomColorGenerator from "./Components/RandomColorGenerator.jsx";
 import Error from "./Components/Error.jsx";
 import StarRating from "./Components/StarRating.jsx";
 import InfiniteScrolling from "./Components/InfiniteScrolling.jsx";
+import NavigationMenu from "./Components/NavigationMenu/NavigationMenu.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/infiniteScrolling",
         element: <InfiniteScrolling />,
+      },
+      {
+        path: "/navigationMenu",
+        element: <NavigationMenu />,
       },
     ],
     errorElement: <Error />,

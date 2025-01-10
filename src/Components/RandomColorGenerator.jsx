@@ -35,7 +35,6 @@ const RandomColorGenerator = () => {
   };
 
   const generateRGBColorWithOpacity = (color) => {
-    console.log(color);
     setNewColor(
       () =>
         "rgb(" +
