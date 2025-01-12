@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import GoHome from "./GoHome";
+import React, { useState } from "react";
+import GoHome from "../GoHome";
 
 const RandomColorGenerator = () => {
   const [newColor, setNewColor] = useState("");

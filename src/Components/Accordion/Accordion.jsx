@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -40,12 +40,12 @@ const Accordion = () => {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <h1 className="text-5xl p-5">Accordion</h1>
+        <h1 className="p-5 text-5xl">Accordion</h1>
         {data.map((ques, index) => {
           return (
             <div className="w-[90%]" key={index}>
               <div
-                className="flex justify-between m-4 p-4 text-white text-2xl bg-lime-600 font-semibold rounded-md shadow-xl shadow-slate-950 cursor-pointer"
+                className="flex justify-between bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-md font-semibold text-2xl text-white cursor-pointer"
                 onClick={() => handleAccordion(index)}
               >
                 <span>{ques.question}</span>
@@ -56,7 +56,7 @@ const Accordion = () => {
                 )}
               </div>
               {acc === index && (
-                <div className="flex justify-between m-4 p-4 text-lime-600 text-2xl bg-lime-200 font-semibold rounded-md shadow-xl shadow-slate-950">
+                <div className="flex justify-between bg-lime-200 shadow-slate-950 shadow-xl m-4 p-4 rounded-md font-semibold text-2xl text-lime-600">
                   <span>{ques.answer}</span>
                 </div>
               )}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 
 const DisplayTime = () => {
   const [hours, setHours] = useState("00");
@@ -30,7 +30,7 @@ const DisplayTime = () => {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <h1 className="text-5xl p-5">Current Date and Time</h1>
+        <h1 className="p-5 text-5xl">Current Date and Time</h1>
         <div className="m-16 text-8xl">{currentDate}</div>
         <div className="flex items-center">
           <div className="m-16 text-8xl">{hours}</div>

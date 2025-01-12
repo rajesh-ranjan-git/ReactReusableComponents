@@ -4,8 +4,8 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Loader from "./Loader";
-import GoHome from "./GoHome";
+import Loader from "../Loader";
+import GoHome from "../GoHome";
 
 const Carousel = () => {
   const url = "https://picsum.photos/v2/list";

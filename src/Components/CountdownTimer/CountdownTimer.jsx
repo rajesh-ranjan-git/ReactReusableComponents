@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 
 const CountdownTimer = () => {
   const [hours, setHours] = useState(0);
@@ -63,7 +63,7 @@ const CountdownTimer = () => {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <h1 className="text-5xl p-5">Countdown Timer</h1>
+        <h1 className="p-5 text-5xl">Countdown Timer</h1>
         <div className="flex items-center">
           <div className="m-16 text-8xl">
             {hours < 10 ? `0${hours}` : hours}
@@ -79,14 +79,14 @@ const CountdownTimer = () => {
         </div>
         <div>
           <button
-            className="m-4 p-4 w-48 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
             onClick={handleStartTimer}
           >
             {buttonValue}
           </button>
           {stop && (
             <button
-              className="m-4 p-4 w-48 text-white text-2xl bg-lime-600 font-semibold rounded-full shadow-xl shadow-slate-950"
+              className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
               onClick={handleStopTimer}
             >
               Stop

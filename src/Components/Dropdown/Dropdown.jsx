@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 
 const countries = [
   { name: "India", cities: ["Delhi", "Mumbai"] },
@@ -18,11 +18,11 @@ const Dropdown = () => {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <h1 className="text-5xl m-5 p-5">Dropdown</h1>
+        <h1 className="m-5 p-5 text-5xl">Dropdown</h1>
         <div>
           {/* 1st DropDown */}
           <select
-            className="p-3 m-2 w-96 text-center text-2xl outline-none bg-white border-4 border-lime-600 rounded-md"
+            className="border-4 bg-white m-2 p-3 border-lime-600 rounded-md w-96 text-2xl text-center outline-none"
             onChange={(e) => handleDropdown(e)}
           >
             {countries.map((country, index) => {
@@ -36,7 +36,7 @@ const Dropdown = () => {
 
           {/* 2nd DropDown */}
           <select
-            className="p-3 w-96 text-center text-2xl outline-none bg-white border-4 border-lime-600 rounded-md"
+            className="border-4 bg-white p-3 border-lime-600 rounded-md w-96 text-2xl text-center outline-none"
             placeholder="Search Here..."
           >
             {countries[selectedCountry].cities.map((city, index) => {

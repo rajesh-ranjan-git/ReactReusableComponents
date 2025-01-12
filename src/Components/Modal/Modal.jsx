@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 
 const Modal = () => {
   const [showModal, setShowModal] = useState(false);

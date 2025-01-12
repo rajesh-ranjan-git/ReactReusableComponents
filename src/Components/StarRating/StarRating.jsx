@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
-import GoHome from "./GoHome";
+import GoHome from "../GoHome";
 
 const StarRating = () => {
   const [hoveredStar, setHoveredStar] = useState(null);
