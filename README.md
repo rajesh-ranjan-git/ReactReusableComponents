@@ -27,7 +27,7 @@
 1. Difference between == and ===
 2. Difference between Let, var and const
 3. Temporal DeadZone
-4. Execution context (Dry runs )
+4. Execution context (Dry runs)
 5. Redeclaration
 6. Reinitialization
 7. Reassigning
