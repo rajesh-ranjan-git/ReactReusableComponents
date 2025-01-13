@@ -1,10 +1,10 @@
-# Interview Practice
+# React Reusable Components
 
-> This is practice set for commonly used Frontend components.
+> This is practice set for commonly used Frontend reusable components.
 
 ---
 
-## This practice set includes :
+## This project includes following reusable components :
 
 1. ToDo
 2. Accordion
@@ -20,7 +20,7 @@
 
 ---
 
-# Interview Topics
+# Important Topics
 
 ## JavaScript Topics
 
