@@ -1,22 +1,22 @@
 # React Reusable Components
 
-> This is practice set for commonly used Frontend reusable components.
-
----
-
 ## This project includes following reusable components :
 
-1. ToDo
-2. Accordion
-3. Carousel
-4. CountDownTimer
-5. Debouncing
-6. Display Time
-7. DropDown
-8. Modal
-9. Throttling
-10. Random Color Generator
-11. Star Rating
+1. Accordion
+2. Carousel
+3. CountDownTimer
+4. Debouncing
+5. Display Time
+6. DropDown
+7. Modal
+8. Throttling
+9. Random Color Generator
+10. Star Rating
+11. Infinite Scrolling
+12. Navigation menu
+13. QR Code Generator
+14. ToDo
+15. Theme Changer
 
 ---
 
