@@ -11,11 +11,7 @@ const ThemeChanger = () => {
   };
 
   const handleThemeChange = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    return theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
   return (
@@ -33,7 +29,7 @@ const ThemeChanger = () => {
             : "p-5 text-5xl text-white transition-all ease-in-out"
         }
       >
-        Infinite Scrolling
+        Theme Changer
       </h1>
 
       <button
@@ -44,7 +40,7 @@ const ThemeChanger = () => {
         }
         onClick={handleThemeChange}
       >
-        Switch to Dark Mode
+        {theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
       </button>
       <button
         className={
