@@ -18,6 +18,10 @@
 14. ToDo
 15. Theme Changer
 16. Scroll Indicator
+17. AutoComplete
+18. Dynamic Tabs
+19. GitHub Profile Finder
+20. TicTacToe
 
 ---
 
