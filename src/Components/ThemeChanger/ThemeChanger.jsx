@@ -6,7 +6,7 @@ const ThemeChanger = () => {
 
   const navigate = useNavigate();
 
-  const handleErrorToHome = () => {
+  const handleGoToHome = () => {
     navigate("/");
   };
 
@@ -48,7 +48,7 @@ const ThemeChanger = () => {
             ? "bg-slate-600 transition-all ease-in-out shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white bottom-10 fixed"
             : "bg-white transition-all ease-in-out shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-black bottom-10 fixed"
         }
-        onClick={handleErrorToHome}
+        onClick={handleGoToHome}
       >
         Go Home
       </button>

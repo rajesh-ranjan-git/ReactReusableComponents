@@ -63,7 +63,7 @@ function Todo() {
 
   const navigate = useNavigate();
 
-  const handleErrorToHome = () => {
+  const handleGoToHome = () => {
     navigate("/");
   };
 
@@ -93,7 +93,7 @@ function Todo() {
       </ToDoContext.Provider>
       <button
         className="bottom-10 fixed shadow-slate-950 shadow-xl backdrop-blur-2xl p-4 border border-opacity-50 rounded-full w-96 font-semibold text-2xl text-white"
-        onClick={handleErrorToHome}
+        onClick={handleGoToHome}
       >
         Go Home
       </button>
