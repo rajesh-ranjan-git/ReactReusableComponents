@@ -37,7 +37,10 @@ const Modal = () => {
           {!showModal ? "Open Modal" : "Close Modal"}
         </button>
         {showModal && (
-          <div className="top-60 absolute flex flex-col justify-center items-center bg-lime-600 shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-8xl text-white">
+          <div
+            className="top-60 absolute flex flex-col justify-center items-center bg-lime-600 shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-8xl text-white modal-container"
+            style={{ animationName: "animateModal", animationDuration: "0.5s" }}
+          >
             <span
               className="top-0 right-2 absolute text-2xl cursor-pointer"
               onClick={handleCloseModal}
