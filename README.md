@@ -17,6 +17,7 @@
 13. QR Code Generator
 14. ToDo
 15. Theme Changer
+16. Scroll Indicator
 
 ---
 

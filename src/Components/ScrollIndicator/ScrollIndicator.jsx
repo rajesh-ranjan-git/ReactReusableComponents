@@ -39,9 +39,9 @@ const ScrollIndicator = () => {
         className="relative flex flex-col items-center border border-lime-600 rounded-xl w-[90vw] h-[75vh] text-xl overflow-y-scroll"
         onScroll={(e) => handleScroll(e)}
       >
-        <div className="fixed bg-lime-600 rounded-xl w-[89vw] h-2">
+        <div className="fixed rounded-xl w-[89vw] h-2">
           <div
-            className="bg-red-600 rounded-xl h-2"
+            className="bg-lime-600 rounded-xl h-2"
             style={{ width: `${scrolledWidth}%` }}
           ></div>
         </div>

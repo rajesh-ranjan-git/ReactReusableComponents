@@ -66,10 +66,11 @@ const Carousel = () => {
                     src={img.download_url}
                     alt={img.download_url}
                     key={img.id}
+                    width={1000}
                     className={
                       slide === idx
-                        ? "rounded-2xl shadow-2xl w-[70vw]"
-                        : "hidden rounded-2xl shadow-2xl w-[70vw]"
+                        ? "rounded-2xl shadow-2xl"
+                        : "hidden rounded-2xl shadow-2xl"
                     }
                   />
                 );
