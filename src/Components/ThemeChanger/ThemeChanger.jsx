@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import useThemeChanger from "./useThemeChanger";
 
 const ThemeChanger = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useThemeChanger("theme", "light");
 
   const navigate = useNavigate();
 
@@ -11,7 +12,7 @@ const ThemeChanger = () => {
   };
 
   const handleThemeChange = () => {
-    return theme === "light" ? setTheme("dark") : setTheme("light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
