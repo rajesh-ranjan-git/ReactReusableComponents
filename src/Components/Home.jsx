@@ -77,6 +77,9 @@ const Home = () => {
   const handleAutoComplete = () => {
     navigate("/autoComplete");
   };
+  const handleTicTacToe = () => {
+    navigate("/ticTacToe");
+  };
 
   return (
     <div className="flex flex-wrap justify-center items-center gap-10 p-10 min-h-screen">
@@ -193,6 +196,12 @@ const Home = () => {
         onClick={handleAutoComplete}
       >
         Auto Complete
+      </button>
+      <button
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+        onClick={handleTicTacToe}
+      >
+        TicTacToe
       </button>
     </div>
   );

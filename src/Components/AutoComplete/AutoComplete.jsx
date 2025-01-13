@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import GoHome from "../GoHome";
+import Loader from "../Loader";
 
 const AutoComplete = () => {
   const [input, setInput] = useState("");
   const [users, setUsers] = useState(null);
   const [userData, setUserData] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleInput = (e) => {
     setInput(e.target.value);
@@ -12,6 +14,7 @@ const AutoComplete = () => {
 
   const getUsers = async (input) => {
     try {
+      setLoading(true);
       const response = await fetch(
         `https://dummyjson.com/users/search?q=${input}`
       );
@@ -20,8 +23,10 @@ const AutoComplete = () => {
       if (data) {
         setUsers(data.users);
       }
+      setLoading(false);
     } catch (error) {
       console.log("An error occurred while getting users : ", error);
+      setLoading(false);
     }
   };
 
@@ -70,6 +75,7 @@ const AutoComplete = () => {
                 ))}
               </div>
             ) : null}
+            {loading && <Loader />}
           </div>
           {userData ? (
             <div className="flex justify-around items-center border-2 border-lime-600 rounded-xl w-[70vw] h-[45vh] text-xl">

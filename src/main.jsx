@@ -23,6 +23,10 @@ import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator.jsx";
 import DynamicTabs from "./Components/DynamicTabs/DynamicTabs.jsx";
 import GitHubProfileFinder from "./Components/GitHubProfileFinder/GitHubProfileFinder.jsx";
 import AutoComplete from "./Components/AutoComplete/AutoComplete.jsx";
+import TicTacToe from "./Components/TicTacToe/TicTacToe.jsx";
+import Players from "./Components/TicTacToe/Components/Players.jsx";
+import Game from "./Components/TicTacToe/Components/Game.jsx";
+import GameHome from "./Components/TicTacToe/Components/GameHome.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -108,6 +112,24 @@ const appRouter = createBrowserRouter([
       {
         path: "/autoComplete",
         element: <AutoComplete />,
+      },
+      {
+        path: "/ticTacToe",
+        element: <TicTacToe />,
+        children: [
+          {
+            path: "",
+            element: <GameHome />,
+          },
+          {
+            path: "players",
+            element: <Players />,
+          },
+          {
+            path: "game",
+            element: <Game />,
+          },
+        ],
       },
     ],
     errorElement: <Error />,
