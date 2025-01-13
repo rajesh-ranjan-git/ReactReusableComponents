@@ -21,6 +21,7 @@ import Todo from "./components/Todo/Todo.jsx";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator.jsx";
 import DynamicTabs from "./Components/DynamicTabs/DynamicTabs.jsx";
+import GitHubProfileFinder from "./Components/GitHubProfileFinder/GitHubProfileFinder.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/dynamicTabs",
         element: <DynamicTabs />,
+      },
+      {
+        path: "/gitHubProfileFinder",
+        element: <GitHubProfileFinder />,
       },
     ],
     errorElement: <Error />,
