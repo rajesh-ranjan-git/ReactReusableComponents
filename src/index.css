@@ -18,6 +18,19 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(101 163 13);
+  border-radius: 1rem;
+}
+
 .todo {
   background-image: url("/assets/background.jpg");
   background-position: left;

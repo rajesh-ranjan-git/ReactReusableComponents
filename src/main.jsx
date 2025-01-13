@@ -19,6 +19,7 @@ import NavigationMenu from "./Components/NavigationMenu/NavigationMenu.jsx";
 import QRCodeGenerator from "./Components/QRCodeGenerator/QRCodeGenerator.jsx";
 import Todo from "./components/Todo/Todo.jsx";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
+import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -88,6 +89,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/themeChanger",
         element: <ThemeChanger />,
+      },
+      {
+        path: "/scrollIndicator",
+        element: <ScrollIndicator />,
       },
     ],
     errorElement: <Error />,
