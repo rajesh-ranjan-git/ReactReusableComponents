@@ -67,6 +67,10 @@ const Home = () => {
     navigate("/scrollIndicator");
   };
 
+  const handleDynamicTabs = () => {
+    navigate("/dynamicTabs");
+  };
+
   return (
     <div className="flex flex-wrap justify-center items-center gap-10 p-10 min-h-screen">
       <button
@@ -164,6 +168,12 @@ const Home = () => {
         onClick={handleScrollIndicator}
       >
         Scroll Indicator
+      </button>
+      <button
+        className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+        onClick={handleDynamicTabs}
+      >
+        Dynamic Tabs
       </button>
     </div>
   );

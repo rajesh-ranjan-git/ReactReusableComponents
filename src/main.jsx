@@ -20,6 +20,7 @@ import QRCodeGenerator from "./Components/QRCodeGenerator/QRCodeGenerator.jsx";
 import Todo from "./components/Todo/Todo.jsx";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator.jsx";
+import DynamicTabs from "./Components/DynamicTabs/DynamicTabs.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -93,6 +94,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/scrollIndicator",
         element: <ScrollIndicator />,
+      },
+      {
+        path: "/dynamicTabs",
+        element: <DynamicTabs />,
       },
     ],
     errorElement: <Error />,
