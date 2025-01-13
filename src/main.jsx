@@ -22,6 +22,7 @@ import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator.jsx";
 import DynamicTabs from "./Components/DynamicTabs/DynamicTabs.jsx";
 import GitHubProfileFinder from "./Components/GitHubProfileFinder/GitHubProfileFinder.jsx";
+import AutoComplete from "./Components/AutoComplete/AutoComplete.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -103,6 +104,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/gitHubProfileFinder",
         element: <GitHubProfileFinder />,
+      },
+      {
+        path: "/autoComplete",
+        element: <AutoComplete />,
       },
     ],
     errorElement: <Error />,
