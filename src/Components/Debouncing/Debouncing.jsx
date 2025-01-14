@@ -1,5 +1,5 @@
 import React from "react";
-import GoHome from "../GoHome";
+import GoHome from "../Utility/GoHome";
 
 const Debouncing = () => {
   const handleSearch = (e) => {

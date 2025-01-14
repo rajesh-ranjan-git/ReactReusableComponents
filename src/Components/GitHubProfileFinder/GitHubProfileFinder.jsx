@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import GoHome from "../GoHome";
-import Loader from "../Loader";
+import GoHome from "../Utility/GoHome";
+import Loader from "../Utility/Loader";
 
 const GitHubProfileFinder = () => {
   const [input, setInput] = useState("");

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GoHome from "../GoHome";
+import GoHome from "../Utility/GoHome";
 import Tabs from "./Tabs";
 import RandomComponent from "./RandomComponent";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "../GoHome";
+import GoHome from "../Utility/GoHome";
 
 const countries = [
   { name: "India", cities: ["Delhi", "Mumbai"] },

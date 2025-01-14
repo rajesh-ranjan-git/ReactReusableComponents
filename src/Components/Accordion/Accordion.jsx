@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "../GoHome";
+import GoHome from "../Utility/GoHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 

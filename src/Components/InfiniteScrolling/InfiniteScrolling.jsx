@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Loader from "../Loader";
+import Loader from "../Utility/Loader";
 import { useNavigate } from "react-router-dom";
 
 const InfiniteScrolling = () => {

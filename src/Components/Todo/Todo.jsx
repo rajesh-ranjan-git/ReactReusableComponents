@@ -92,7 +92,7 @@ function Todo() {
         <TodoContainer />
       </ToDoContext.Provider>
       <button
-        className="bottom-10 fixed shadow-slate-950 shadow-xl backdrop-blur-2xl p-4 border border-opacity-50 rounded-full w-96 font-semibold text-2xl text-white"
+        className="bottom-10 fixed bg-opacity-30 shadow-slate-950 shadow-xl backdrop-blur-2xl p-4 border border-opacity-50 rounded-full w-96 font-semibold text-2xl text-white"
         onClick={handleGoToHome}
       >
         Go Home

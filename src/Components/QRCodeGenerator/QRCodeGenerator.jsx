@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoHome from "../GoHome";
+import GoHome from "../Utility/GoHome";
 import QRCode from "react-qr-code";
 
 const QRCodeGenerator = () => {
