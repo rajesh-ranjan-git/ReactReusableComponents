@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GoHome from "../Utility/GoHome";
+import useOutsideClick from "./useOutsideClick";
 
 const Modal = () => {
+  const modalRef = useRef();
+  useOutsideClick(modalRef, () => setShowModal(false));
   const [showModal, setShowModal] = useState(false);
 
   const handleModal = () => {
@@ -16,29 +19,22 @@ const Modal = () => {
     setShowModal(false);
   };
 
-  const handleOutsideClick = (e) => {
-    if (e.target.id === "modal-container") {
-      handleCloseModal();
-    }
-  };
-
   return (
     <>
-      <div
-        className="flex flex-col items-center h-screen"
-        id="modal-container"
-        onClick={(e) => handleOutsideClick(e)}
-      >
+      <div className="flex flex-col items-center h-screen" id="modal-container">
         <h1 className="p-5 text-5xl">Modal</h1>
-        <button
-          className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
-          onClick={handleModal}
-        >
-          {!showModal ? "Open Modal" : "Close Modal"}
-        </button>
+        {!showModal ? (
+          <button
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
+            onClick={handleModal}
+          >
+            Open Modal
+          </button>
+        ) : null}
         {showModal && (
           <div
-            className="top-60 absolute flex flex-col justify-center items-center bg-lime-600 shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-8xl text-white modal-container"
+            className="top-24 absolute flex flex-col justify-center items-center bg-lime-600 shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[70%] font-semibold text-8xl text-white"
+            ref={modalRef}
             style={{ animationName: "animateModal", animationDuration: "0.5s" }}
           >
             <span
