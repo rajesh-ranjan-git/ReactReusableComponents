@@ -25,6 +25,7 @@ import TicTacToe from "../Components/TicTacToe/TicTacToe.jsx";
 import Players from "../Components/TicTacToe/Components/Players.jsx";
 import Game from "../Components/TicTacToe/Components/Game.jsx";
 import GameHome from "../Components/TicTacToe/Components/GameHome.jsx";
+import CSSGrid from "../Components/CSSGrid/CSSGrid.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/debouncing",
         element: <Debouncing />,
+      },
+      {
+        path: "/cssGrid",
+        element: <CSSGrid />,
       },
       {
         path: "/throttling",

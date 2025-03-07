@@ -3,6 +3,7 @@ const modulePaths = [
   { label: "Auto Complete", path: "/autoComplete" },
   { label: "Carousel", path: "/carousel" },
   { label: "Countdown Timer", path: "/countdownTimer" },
+  { label: "CSS Grid", path: "/cssGrid" },
   { label: "Debouncing", path: "/debouncing" },
   { label: "Display Time", path: "/displayTime" },
   { label: "Dropdown", path: "/dropdown" },
