@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GoHome from "../Utility/GoHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -45,18 +46,30 @@ const Accordion = () => {
           return (
             <div className="w-[90%]" key={index}>
               <div
-                className="flex justify-between bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-md font-semibold text-2xl text-white cursor-pointer"
+                className="flex justify-between bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-md font-semibold text-white text-2xl cursor-pointer"
                 onClick={() => handleAccordion(index)}
               >
                 <span>{ques.question}</span>
                 {acc === index ? (
-                  <FontAwesomeIcon icon={faChevronUp} />
+                  <motion.div // Change color smoothly
+                    transition={{ duration: 0.3 }}
+                  >
+                    <FontAwesomeIcon icon={faChevronUp} />
+                  </motion.div>
                 ) : (
-                  <FontAwesomeIcon icon={faChevronDown} />
+                  <motion.div
+                    animate={{ rotate: acc === index ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <FontAwesomeIcon icon={faChevronDown} />
+                  </motion.div>
                 )}
               </div>
               {acc === index && (
-                <div className="flex justify-between bg-lime-200 shadow-slate-950 shadow-xl m-4 p-4 rounded-md font-semibold text-2xl text-lime-600">
+                <div
+                  className="flex justify-between bg-lime-200 shadow-slate-950 shadow-xl m-4 p-4 rounded-md max-h-0 overflow-hidden font-semibold text-lime-600 text-2xl transition-all duration-500 ease-in-out"
+                  style={{ maxHeight: acc === index ? "500px" : "0" }}
+                >
                   <span>{ques.answer}</span>
                 </div>
               )}
