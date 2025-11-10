@@ -24,7 +24,7 @@ const Throttling = () => {
       <div className="flex flex-col items-center h-screen">
         <h1 className="p-5 text-5xl">Throttling</h1>
         <div
-          className="border-2 p-3 border-lime-600 rounded-tl-2xl rounded-bl-2xl w-[50rem] h-96 overflow-y-scroll"
+          className="p-3 border-2 border-lime-600 rounded-tl-2xl rounded-bl-2xl w-[50rem] h-96 overflow-y-scroll"
           onScroll={throttle(handleScroll, 1000)}
         >
           <p>

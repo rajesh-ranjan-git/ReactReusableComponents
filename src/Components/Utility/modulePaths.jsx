@@ -15,6 +15,7 @@ const modulePaths = [
   { label: "QR Code Generator", path: "/qrCodeGenerator" },
   { label: "Random Color Generator", path: "/randomColorGenerator" },
   { label: "Scroll Indicator", path: "/scrollIndicator" },
+  { label: "Stacked Cards", path: "/stackedCards" },
   { label: "Star Rating", path: "/starRating" },
   { label: "Theme Changer", path: "/themeChanger" },
   { label: "Throttling", path: "/throttling" },

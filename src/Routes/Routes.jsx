@@ -26,6 +26,7 @@ import Players from "../Components/TicTacToe/Components/Players.jsx";
 import Game from "../Components/TicTacToe/Components/Game.jsx";
 import GameHome from "../Components/TicTacToe/Components/GameHome.jsx";
 import CSSGrid from "../Components/CSSGrid/CSSGrid.jsx";
+import StackedCards from "../Components/StackedCards/StackedCards.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -103,6 +104,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/scrollIndicator",
         element: <ScrollIndicator />,
+      },
+      {
+        path: "/stackedCards",
+        element: <StackedCards />,
       },
       {
         path: "/dynamicTabs",
