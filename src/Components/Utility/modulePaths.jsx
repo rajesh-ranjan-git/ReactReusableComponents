@@ -7,6 +7,7 @@ const modulePaths = [
   { label: "Debouncing", path: "/debouncing" },
   { label: "Display Time", path: "/displayTime" },
   { label: "Dropdown", path: "/dropdown" },
+  { label: "Dropdown 2", path: "/dropdown2" },
   { label: "Dynamic Tabs", path: "/dynamicTabs" },
   { label: "GitHub Profile Finder", path: "/gitHubProfileFinder" },
   { label: "Infinite Scrolling", path: "/infiniteScrolling" },
