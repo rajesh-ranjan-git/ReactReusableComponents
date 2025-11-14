@@ -3,25 +3,28 @@
 ## This project includes following reusable components :
 
 1. Accordion
-2. Carousel
-3. CountDownTimer
-4. Debouncing
-5. Display Time
-6. DropDown
-7. Modal
-8. Throttling
-9. Random Color Generator
-10. Star Rating
-11. Infinite Scrolling
-12. Navigation menu
-13. QR Code Generator
-14. ToDo
-15. Theme Changer
-16. Scroll Indicator
-17. AutoComplete
-18. Dynamic Tabs
-19. GitHub Profile Finder
-20. TicTacToe
+2. AutoComplete
+3. Carousel
+4. CountDownTimer
+5. CSSGrid
+6. Debouncing
+7. Display Time
+8. DropDown
+9. DropDown2
+10. Dynamic Tabs
+11. GitHub Profile Finder
+12. Infinite Scrolling
+13. Modal
+14. Navigation Menu
+15. QR Code Generator
+16. Random Color Generator
+17. Scroll Indicator
+18. Stacked Cards
+19. Star Rating
+20. Theme Changer
+21. Throttling
+22. TicTacToe
+23. ToDo
 
 ---
 
