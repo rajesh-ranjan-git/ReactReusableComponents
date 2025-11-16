@@ -11,13 +11,13 @@ const Dropdown2 = () => {
             <div>
               <button
                 popovertarget="menu-1"
-                className="bg-lime-800 p-2 rounded-lg font-semibold"
+                className="bg-lime-800 hover:bg-white shadow-md p-2 border border-lime-800 rounded-lg font-semibold hover:text-lime-800 transition-all ease-in-out"
               >
                 Dropdown Menu 1
               </button>
               <div
                 id="menu-1"
-                className="absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
+                className="top-[anchor(bottom)] left-[anchor(left)] absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
                 popover=""
               >
                 <a href="" className="hover:bg-lime-700 p-2 rounded-lg">
@@ -34,13 +34,13 @@ const Dropdown2 = () => {
             <div>
               <button
                 popovertarget="menu-2"
-                className="bg-lime-800 p-2 rounded-lg font-semibold"
+                className="bg-lime-800 hover:bg-white shadow-md p-2 border border-lime-800 rounded-lg font-semibold hover:text-lime-800 transition-all ease-in-out"
               >
                 Dropdown Menu 2
               </button>
               <div
                 id="menu-2"
-                className="absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
+                className="top-[anchor(bottom)] left-[anchor(left)] absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
                 popover=""
               >
                 <a href="" className="hover:bg-lime-700 p-2 rounded-lg">
@@ -59,13 +59,13 @@ const Dropdown2 = () => {
             <div>
               <button
                 popovertarget="menu-3"
-                className="bg-lime-800 p-2 rounded-lg font-semibold"
+                className="bg-lime-800 hover:bg-white shadow-md p-2 border border-lime-800 rounded-lg font-semibold hover:text-lime-800 transition-all ease-in-out"
               >
                 Dropdown Menu 3
               </button>
               <div
                 id="menu-3"
-                className="absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
+                className="top-[anchor(bottom)] left-[anchor(left)] absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
                 popover=""
               >
                 <a href="" className="hover:bg-lime-700 p-2 rounded-lg">
@@ -82,13 +82,13 @@ const Dropdown2 = () => {
             <div>
               <button
                 popovertarget="menu-4"
-                className="bg-lime-800 p-2 rounded-lg font-semibold"
+                className="bg-lime-800 hover:bg-white shadow-md p-2 border border-lime-800 rounded-lg font-semibold hover:text-lime-800 transition-all ease-in-out"
               >
                 Dropdown Menu 4
               </button>
               <div
                 id="menu-4"
-                className="absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
+                className="top-[anchor(bottom)] left-[anchor(left)] absolute bg-lime-500 my-2 p-1 rounded-lg w-max text-white menu"
                 popover=""
               >
                 <a href="" className="hover:bg-lime-700 p-2 rounded-lg">
