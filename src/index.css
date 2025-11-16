@@ -38,11 +38,6 @@
   background-size: cover;
 }
 
-/* .modal-container {
-  animation-name: animateModal;
-  animation-duration: 0.5s;
-} */
-
 @keyframes animateModal {
   from {
     top: -200px;
