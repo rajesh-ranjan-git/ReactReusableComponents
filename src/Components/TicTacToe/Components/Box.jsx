@@ -1,17 +1,15 @@
-import React from "react";
-
 const Box = () => {
   return (
-    <div className="m-2 flex justify-center items-center flex-wrap">
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
-      <div className="m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer"></div>
+    <div className="flex flex-wrap justify-center items-center m-2">
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
+      <div className="bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] cursor-pointer"></div>
     </div>
   );
 };

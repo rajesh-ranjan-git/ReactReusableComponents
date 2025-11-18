@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoHome from "../Utility/GoHome";
 import QRCode from "react-qr-code";
 
@@ -25,7 +25,7 @@ const QRCodeGenerator = () => {
         <div className="flex flex-col justify-center items-center gap-10">
           <h1 className="p-5 text-5xl">QR Code Generator</h1>
           <input
-            className="border-4 bg-white p-3 border-lime-600 rounded-full w-96 text-2xl text-center outline-none"
+            className="bg-white p-3 border-4 border-lime-600 rounded-full outline-none w-96 text-2xl text-center"
             name="qrCode"
             placeholder="Enter your text Here..."
             value={input}
@@ -34,7 +34,7 @@ const QRCodeGenerator = () => {
           />
           {qrValue && <QRCode value={qrValue} />}
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-white text-2xl"
             onClick={() => handleQRCode(input)}
           >
             Generate

@@ -1,4 +1,3 @@
-import React from "react";
 import NavigationList from "./NavigationList";
 import GoHome from "../Utility/GoHome";
 import menu from "./data/navigationData";

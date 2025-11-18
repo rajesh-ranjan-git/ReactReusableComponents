@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "../Utility/Loader";
 import { useNavigate } from "react-router-dom";
 
@@ -85,7 +85,7 @@ const InfiniteScrolling = () => {
 
         <div className="flex justify-center items-center py-5">
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl p-4 rounded-full w-96 font-semibold text-white text-2xl"
             onClick={handleGoToHome}
           >
             Go Home

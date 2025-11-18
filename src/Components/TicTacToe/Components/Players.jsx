@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { initialValues, usePlayers } from "../utils/Store/PlayerController";
 import newGameSound from "../assets/sounds/new-game2.mp3";
@@ -34,7 +33,7 @@ const Players = () => {
         <input
           name="player1"
           placeholder="Player 1"
-          className="m-2 p-2 rounded-lg w-60 text-center outline-none"
+          className="m-2 p-2 rounded-lg outline-none w-60 text-center"
           onChange={handlePlayerNames}
         />
         <label className="m-2 p-2 w-60 font-semibold text-2xl">
@@ -43,7 +42,7 @@ const Players = () => {
         <input
           name="player2"
           placeholder="Player 2"
-          className="m-2 p-2 rounded-lg w-60 text-center outline-none"
+          className="m-2 p-2 rounded-lg outline-none w-60 text-center"
           onChange={handlePlayerNames}
         />
         <button

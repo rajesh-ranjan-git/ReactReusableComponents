@@ -1,4 +1,3 @@
-import React from "react";
 import GoHome from "../Utility/GoHome";
 
 const Dropdown2 = () => {

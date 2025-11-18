@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoHome from "../Utility/GoHome";
 
 const CSSGrid = () => {
@@ -6,7 +6,7 @@ const CSSGrid = () => {
     <>
       <div className="flex flex-col items-center h-screen">
         {/* <h1 className="p-5 text-5xl">CSS Grid</h1> */}
-        {/* <div className="gap-2 grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 bg-yellow-400 shadow-md p-2 border rounded-md w-full">
+        {/* <div className="gap-2 grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-7 xl:grid-cols-6 bg-yellow-400 shadow-md p-2 border rounded-md w-full">
           <div className="bg-red-500 hover:bg-red-900 shadow-md border rounded-md w-full h-40 transition-all ease-in-out cursor-pointer"></div>
           <div className="bg-red-500 hover:bg-red-900 shadow-md border rounded-md w-full h-40 transition-all ease-in-out cursor-pointer"></div>
           <div className="bg-red-500 hover:bg-red-900 shadow-md border rounded-md w-full h-40 transition-all ease-in-out cursor-pointer"></div>

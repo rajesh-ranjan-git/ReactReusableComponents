@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import GoHome from "../Utility/GoHome";
 import Loader from "../Utility/Loader";
 
@@ -36,7 +36,7 @@ const ScrollIndicator = () => {
     <div className="flex flex-col items-center h-screen">
       <h1 className="p-5 text-5xl">Scroll Indicator</h1>
       <div
-        className="relative flex flex-col items-center border border-lime-600 rounded-xl w-[90vw] h-[75vh] text-xl overflow-y-scroll"
+        className="relative flex flex-col items-center border border-lime-600 rounded-xl w-[90vw] h-[75vh] overflow-y-scroll text-xl"
         onScroll={(e) => handleScroll(e)}
       >
         <div className="fixed rounded-xl w-[89vw] h-2">

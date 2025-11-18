@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavigationList from "./NavigationList";
 import { FaPlus, FaMinus } from "react-icons/fa";
 

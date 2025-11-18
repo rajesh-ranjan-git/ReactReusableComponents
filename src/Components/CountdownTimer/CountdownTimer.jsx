@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import GoHome from "../Utility/GoHome";
 
 const CountdownTimer = () => {
@@ -79,14 +79,14 @@ const CountdownTimer = () => {
         </div>
         <div>
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-white text-2xl"
             onClick={handleStartTimer}
           >
             {buttonValue}
           </button>
           {stop && (
             <button
-              className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-2xl text-white"
+              className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full w-48 font-semibold text-white text-2xl"
               onClick={handleStopTimer}
             >
               Stop

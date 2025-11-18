@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoHome from "../Utility/GoHome";
 
 const RandomColorGenerator = () => {
@@ -51,7 +51,7 @@ const RandomColorGenerator = () => {
         <h1 className="p-5 text-5xl">Random Color Generator</h1>
         <div className="flex">
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-white text-2xl"
             onClick={() =>
               generateHexColor([
                 Number((Math.random() * 15).toFixed(0)),
@@ -66,7 +66,7 @@ const RandomColorGenerator = () => {
             Generate Hex Color
           </button>
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-white text-2xl"
             onClick={() =>
               generateRGBColor([
                 Number((Math.random() * 255).toFixed(0)),
@@ -78,7 +78,7 @@ const RandomColorGenerator = () => {
             Generate RGB Color
           </button>
           <button
-            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-2xl text-white"
+            className="bg-lime-600 shadow-slate-950 shadow-xl m-4 p-4 rounded-full font-semibold text-white text-2xl"
             onClick={() =>
               generateRGBColorWithOpacity([
                 Number((Math.random() * 255).toFixed(0)),
@@ -92,7 +92,7 @@ const RandomColorGenerator = () => {
         </div>
         {newColor && (
           <div
-            className="top-60 absolute flex flex-col justify-center items-center shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-8xl text-white b"
+            className="top-60 absolute flex flex-col justify-center items-center shadow-slate-950 shadow-xl p-10 rounded-2xl w-[70%] h-[50%] font-semibold text-white text-8xl b"
             style={{ backgroundColor: newColor }}
           >
             <div>{newColor}</div>

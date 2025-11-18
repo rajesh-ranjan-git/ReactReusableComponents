@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Tabs = ({ tabData }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,7 +13,7 @@ const Tabs = ({ tabData }) => {
         {tabData && tabData.length
           ? tabData.map((tab, index) => (
               <div
-                className="border-2 border-white bg-lime-600 hover:bg-lime-400 px-6 p-4 border-b-0 rounded-t-lg font-semibold text-white transition-all cursor-pointer smooth"
+                className="bg-lime-600 hover:bg-lime-400 p-4 px-6 border-2 border-white border-b-0 rounded-t-lg font-semibold text-white transition-all cursor-pointer smooth"
                 style={
                   activeTab === tab.id - 1
                     ? { backgroundColor: "purple" }

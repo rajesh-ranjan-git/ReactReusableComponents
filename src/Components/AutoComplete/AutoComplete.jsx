@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import GoHome from "../Utility/GoHome";
 import Loader from "../Utility/Loader";
 
@@ -54,7 +54,7 @@ const AutoComplete = () => {
           <h1 className="p-5 text-5xl">Auto Complete</h1>
           <div>
             <input
-              className="border-4 bg-white p-3 border-lime-600 rounded-full w-96 text-2xl text-center outline-none"
+              className="bg-white p-3 border-4 border-lime-600 rounded-full outline-none w-96 text-2xl text-center"
               name="qrCode"
               placeholder="Search here..."
               autoComplete="off"
@@ -62,7 +62,7 @@ const AutoComplete = () => {
               onChange={(e) => handleInput(e)}
             />
             {users && users.length ? (
-              <div className="flex flex-col justify-center items-center border-2 mt-1 border-lime-600 rounded-xl w-96 text-center cursor-pointer overflow-hidden">
+              <div className="flex flex-col justify-center items-center mt-1 border-2 border-lime-600 rounded-xl w-96 overflow-hidden text-center cursor-pointer">
                 {users.map((user) => (
                   <p
                     className="hover:bg-slate-200 p-1 w-full"

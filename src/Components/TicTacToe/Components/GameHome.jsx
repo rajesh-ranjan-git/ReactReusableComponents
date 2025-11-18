@@ -1,4 +1,3 @@
-import React from "react";
 import startGame from "../assets/startGame.jpg";
 import { Link } from "react-router-dom";
 import GoHomeButton from "./GoHomeButton";
@@ -14,7 +13,7 @@ const GameHome = () => {
         />
         <div className="top-16 left-16 absolute">
           <Link to="players">
-            <button className="hover:border-2 bg-[#F1FAEE] hover:bg-transparent p-5 rounded-2xl w-52 text-3xl hover:text-[#F1FAEE]">
+            <button className="bg-[#F1FAEE] hover:bg-transparent p-5 hover:border-2 rounded-2xl w-52 hover:text-[#F1FAEE] text-3xl">
               Start
             </button>
           </Link>

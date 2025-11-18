@@ -1,4 +1,3 @@
-import React from "react";
 import startGame from "../assets/startGame.jpg";
 
 const StartGame = () => {
@@ -8,10 +7,10 @@ const StartGame = () => {
       <img
         src={startGame}
         alt="startGame"
-        className="object-cover h-96 rounded-2xl"
+        className="rounded-2xl h-96 object-cover"
       />
-      <div className="absolute top-16 left-16">
-        <button className="text-3xl bg-[#F1FAEE] p-5 w-52 rounded-2xl hover:bg-transparent hover:border-2 hover:text-[#F1FAEE]">
+      <div className="top-16 left-16 absolute">
+        <button className="bg-[#F1FAEE] hover:bg-transparent p-5 hover:border-2 rounded-2xl w-52 hover:text-[#F1FAEE] text-3xl">
           Start
         </button>
       </div>

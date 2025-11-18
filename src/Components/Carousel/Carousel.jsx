@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -77,13 +77,13 @@ const Carousel = () => {
               })
             : null}
           <div
-            className="left-2 z-10 absolute flex justify-center items-center bg-white hover:bg-black shadow-2xl rounded-full w-10 h-10 text-xl hover:text-white cursor-pointer"
+            className="left-2 z-10 absolute flex justify-center items-center bg-white hover:bg-black shadow-2xl rounded-full w-10 h-10 hover:text-white text-xl cursor-pointer"
             onClick={handleLeft}
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
           <div
-            className="right-2 z-10 absolute flex justify-center items-center bg-white hover:bg-black shadow-2xl rounded-full w-10 h-10 text-xl hover:text-white cursor-pointer"
+            className="right-2 z-10 absolute flex justify-center items-center bg-white hover:bg-black shadow-2xl rounded-full w-10 h-10 hover:text-white text-xl cursor-pointer"
             onClick={handleRight}
           >
             <FontAwesomeIcon icon={faChevronRight} />

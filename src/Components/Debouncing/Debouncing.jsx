@@ -1,4 +1,3 @@
-import React from "react";
 import GoHome from "../Utility/GoHome";
 
 const Debouncing = () => {
@@ -21,7 +20,7 @@ const Debouncing = () => {
       <div className="flex flex-col items-center h-screen">
         <h1 className="p-5 text-5xl">Debouncing</h1>
         <input
-          className="border-4 bg-white p-3 border-lime-600 rounded-full w-96 text-2xl text-center outline-none"
+          className="bg-white p-3 border-4 border-lime-600 rounded-full outline-none w-96 text-2xl text-center"
           placeholder="Search Here..."
           onChange={debounce(handleSearch, 1000)}
         />

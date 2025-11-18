@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
 
 const Card = ({ img, cards, setCards }) => {

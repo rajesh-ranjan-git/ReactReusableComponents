@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoHome from "../Utility/GoHome";
 import Card from "./Card";
 

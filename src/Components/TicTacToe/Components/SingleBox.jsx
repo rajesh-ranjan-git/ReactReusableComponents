@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import clickSound from "../assets/sounds/click.mp3";
 
 const SingleBox = ({ id, handleTurns, boxValue, winner, draw, counter }) => {
@@ -21,7 +21,7 @@ const SingleBox = ({ id, handleTurns, boxValue, winner, draw, counter }) => {
 
   return (
     <div
-      className="flex justify-center items-center m-2 bg-[#1D3557] h-[7rem] w-[7rem] rounded-2xl drop-shadow-box cursor-pointer text-6xl font-semibold text-[#F1FAEE]"
+      className="flex justify-center items-center bg-[#1D3557] drop-shadow-box m-2 rounded-2xl w-[7rem] h-[7rem] font-semibold text-[#F1FAEE] text-6xl cursor-pointer"
       onClick={!winner && !draw ? handleBoxValue : null}
       ref={boxValueRef}
     >

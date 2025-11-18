@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoHome from "../Utility/GoHome";
 
 const countries = [
@@ -22,7 +22,7 @@ const Dropdown = () => {
         <div>
           {/* 1st DropDown */}
           <select
-            className="border-4 bg-white m-2 p-3 border-lime-600 rounded-md w-96 text-2xl text-center outline-none"
+            className="bg-white m-2 p-3 border-4 border-lime-600 rounded-md outline-none w-96 text-2xl text-center"
             onChange={(e) => handleDropdown(e)}
           >
             {countries.map((country, index) => {
@@ -36,7 +36,7 @@ const Dropdown = () => {
 
           {/* 2nd DropDown */}
           <select
-            className="border-4 bg-white p-3 border-lime-600 rounded-md w-96 text-2xl text-center outline-none"
+            className="bg-white p-3 border-4 border-lime-600 rounded-md outline-none w-96 text-2xl text-center"
             placeholder="Search Here..."
           >
             {countries[selectedCountry].cities.map((city, index) => {
