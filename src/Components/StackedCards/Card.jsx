@@ -8,9 +8,10 @@ const Card = ({ img, cards, setCards }) => {
 
   const isFront = img.id === cards[cards.length - 1].id;
 
-  const rotate = useTransform(() => {
-    const offset = isFront ? 0 : img.id % 2 ? 6 : -6;
+  const cardIndex = cards.findIndex((card) => card.id === img.id);
 
+  const rotate = useTransform(() => {
+    const offset = isFront ? 0 : cardIndex % 2 ? 6 : -6;
     return `${rotateRow.get() + offset}deg`;
   });
 
@@ -36,7 +37,7 @@ const Card = ({ img, cards, setCards }) => {
         opacity,
         rotate,
         transition: "0.125s transform",
-        zIndex: img.id,
+        zIndex: cardIndex,
       }}
       animate={{
         scale: isFront ? 1 : 0.98,
